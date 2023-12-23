@@ -1,86 +1,130 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@700;800&family=Outfit:wght@300;400;600&display=swap");
 :root {
   --dark: #2c2c2c;
   --dark-light: #4d4d4d;
+  --light: #e3e2f3;
   --purple: #811ef3;
   --blue: #345feb;
 }
-
 * {
   margin: 0;
-  border: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
-
-.center {
-  text-align: center;
-}
-
-.title {
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.large {
-  font-size: 3rem;
-}
-
-.medium {
-  font-size: 1.3rem;
-}
-
-.normal {
-  font-size: 1rem;
-}
-
-.fancy {
-  background: -webkit-linear-gradient(45deg, var(--purple), var(--blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.dimmed {
-  color: var(--dark-light);
-}
-
 html {
   background-color: #fff;
 }
-
 body {
   width: calc(100vw - 2rem);
   max-width: 1200px;
   height: 100vh;
   margin: auto;
   color: var(--dark);
+  letter-spacing: 0.03rem;
 }
-
+p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+.link {
+  text-decoration: none;
+  color: var(--blue);
+}
+.link::after {
+  content: "";
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 0.1rem;
+  background-image: url("./assets/img/link.svg");
+  background-size: contain;
+}
+.center {
+  text-align: center;
+}
+.title {
+  font-family: "Lexend", sans-serif;
+  font-weight: 900;
+}
+.large {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.medium {
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+}
+.normal {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.fancy {
+  background: -webkit-linear-gradient(45deg, var(--purple), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ident {
+  margin-left: 1rem;
+}
+.bold {
+  font-weight: 600;
+}
+.italic {
+  font-style: italic;
+}
+.dimmed {
+  color: var(--dark-light);
+}
+.note-block {
+  position: relative;
+  width: calc(100% - 2rem);
+  margin: 1rem auto 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: var(--light);
+}
+.note-block::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  height: 100%;
+  border: 2px solid var(--purple);
+  border-radius: 15px;
+  z-index: -1;
+}
+.note-block h3 {
+  font-weight: 700;
+}
 header {
   display: flex;
   align-items: center;
   height: 5rem;
 }
-
 #logo {
   width: 3rem;
 }
-
 #banner {
   padding: 5rem 0;
   border-radius: 15px;
   background-image: url("./assets/img/banner.png");
   background-size: cover;
 }
-
 #lettering {
   display: block;
   width: 40%;
   min-width: 250px;
   margin: 2rem auto;
 }
-
-h2 {
+#banner-subtext {
   font-weight: 400;
+}
+section {
+  margin: 1rem 0;
+}
+#mini-list {
+  list-style-type: none;
 }
