@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Rubik:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap");
+
+:root {
+  --dark: #2c2c2c;
+  --dark-light: #4d4d4d;
+  --purple: #811ef3;
+  --blue: #345feb;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.large {
+  font-size: 3rem;
+}
+
+.medium {
+  font-size: 1.3rem;
+}
+
+.normal {
+  font-size: 1rem;
+}
+
+.fancy {
+  background: -webkit-linear-gradient(45deg, var(--purple), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dimmed {
+  color: var(--dark-light);
+}
+
+html {
+  background-color: #fff;
+}
+
+body {
+  width: calc(100vw - 2rem);
+  max-width: 1200px;
+  height: 100vh;
+  margin: auto;
+  color: var(--dark);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+
+#logo {
+  width: 3rem;
+}
+
+#banner {
+  padding: 5rem 0;
+  border-radius: 15px;
+  background-image: url("./assets/img/banner.png");
+  background-size: cover;
+}
+
+#lettering {
+  display: block;
+  width: 40%;
+  min-width: 250px;
+  margin: 2rem auto;
+}
+
+h2 {
+  font-weight: 400;
+}
